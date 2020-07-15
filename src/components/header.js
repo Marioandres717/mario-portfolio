@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => {
       <Flex
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1280,
           padding: `1.45rem 1.0875rem`,
         }}
       >
@@ -20,6 +20,7 @@ const Header = ({ siteTitle }) => {
           <Link
             to="/"
             sx={{
+              color: "text",
               mr: 16,
               textDecoration: `none`,
               textTransform: "uppercase",
@@ -31,6 +32,7 @@ const Header = ({ siteTitle }) => {
           <Link
             to="/blog/"
             sx={{
+              color: "text",
               textDecoration: `none`,
               textTransform: "uppercase",
             }}
