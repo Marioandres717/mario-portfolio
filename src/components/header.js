@@ -21,6 +21,9 @@ const Header = ({ siteTitle }) => {
             to="/"
             sx={{
               color: "text",
+              fontSize: 14,
+              letterSpacing: 4,
+              fontWeight: "bold",
               mr: 16,
               textDecoration: `none`,
               textTransform: "uppercase",
@@ -33,6 +36,9 @@ const Header = ({ siteTitle }) => {
             to="/blog/"
             sx={{
               color: "text",
+              fontSize: 14,
+              letterSpacing: 4,
+              fontWeight: "bold",
               textDecoration: `none`,
               textTransform: "uppercase",
             }}
