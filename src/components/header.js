@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => {
               textTransform: "uppercase",
             }}
           >
-            {siteTitle}
+            Home
           </Link>
 
           <Link

@@ -90,5 +90,9 @@ export default {
       textAlign: "left",
       borderBottomStyle: "solid",
     },
+    a: {
+      color: "text",
+      textDecoration: "none",
+    },
   },
 }

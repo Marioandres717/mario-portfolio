@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 
 const Intro = () => (
   <div sx={{ pb: 128, m: 0 }}>
-    <h1 sx={{ mt: 0 }}>Mario Andres Rendon</h1>
+    <h1 sx={{ fontSize: 36 }}>Mario Andres Rendon</h1>
     <p sx={{ fontSize: 18, fontWeight: "bold" }}>
       Fullstack Javascript Developer. Based in Regina, SK
     </p>
-    <ul sx={{ pl: 0 }}>
+    <ul sx={{ pl: 0, m: 0 }}>
       <Link
         sx={{
           pr: 2,
