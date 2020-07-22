@@ -11,8 +11,9 @@ const Experience = () => (
       sx={{
         listStyle: "none",
         p: 0,
-        display: "flex",
-        justifyContent: "space-between",
+        display: "grid",
+        gridGap: 3,
+        gridTemplateColumns: `repeat(auto-fit, minmax(228px, 1fr))`,
       }}
     >
       <li sx={{ maxWidth: 288 }}>
