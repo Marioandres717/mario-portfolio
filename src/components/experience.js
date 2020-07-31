@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "react"
+import { Fragment } from "react"
 import { Styled } from "theme-ui"
 
 const Experience = () => (
-  <>
+  <Fragment>
     {" "}
     <h2 sx={{ my: 22, fontSize: 27 }}>Experience</h2>{" "}
     <ul
@@ -63,7 +63,7 @@ const Experience = () => (
         messages and pictures, and users can comment on those post.
       </li>
     </ul>
-  </>
+  </Fragment>
 )
 
 export default Experience
