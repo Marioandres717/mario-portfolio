@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
+import Icons from "./icons"
 
 const LinkStyle = {
   fontSize: 1,
@@ -12,29 +13,32 @@ const LinkStyle = {
 }
 
 const Footer = () => (
-  <footer
-    sx={{
-      display: "flex",
-      flexWrap: "wrap",
-      alignItems: "center",
-      p: 2,
-      variant: "styles.footer",
-    }}
-  >
-    <Link sx={LinkStyle} to="/">
-      HOME
-    </Link>
-    <Link sx={LinkStyle} to="/blog/">
-      BLOG
-    </Link>
-    <Link sx={LinkStyle} to="/about/">
-      ABOUT
-    </Link>
-    <div sx={{ mx: "auto" }} />
-    <div sx={{ my: 2, display: "inline-block", fontSize: 1 }}>
-      © {new Date().getFullYear()} Mario Andres{" "}
-    </div>{" "}
-  </footer>
+  <div sx={{ py: 64 }}>
+    <Icons />
+    <footer
+      sx={{
+        display: "flex",
+        flexWrap: "wrap",
+        alignItems: "center",
+        py: 2,
+        variant: "styles.footer",
+      }}
+    >
+      <Link sx={LinkStyle} to="/">
+        HOME
+      </Link>
+      <Link sx={LinkStyle} to="/blog/">
+        BLOG
+      </Link>
+      <Link sx={LinkStyle} to="/about/">
+        ABOUT
+      </Link>
+      <div sx={{ mx: "auto" }} />
+      <div sx={{ my: 2, display: "inline-block", fontSize: 1 }}>
+        © {new Date().getFullYear()} Mario Andres{" "}
+      </div>{" "}
+    </footer>
+  </div>
 )
 
 export default Footer
