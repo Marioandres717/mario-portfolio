@@ -94,5 +94,15 @@ export default {
       color: "text",
       textDecoration: "none",
     },
+    ul: {
+      listStyle: "none",
+      p: 0,
+      display: "grid",
+      gridGap: 3,
+      gridTemplateColumns: `repeat(auto-fit, minmax(228px, 1fr))`,
+    },
+    li: {
+      maxWidth: 288,
+    },
   },
 }

@@ -7,16 +7,8 @@ const Experience = () => (
   <Fragment>
     {" "}
     <h2 sx={{ my: 22, fontSize: 27 }}>Experience</h2>{" "}
-    <ul
-      sx={{
-        listStyle: "none",
-        p: 0,
-        display: "grid",
-        gridGap: 3,
-        gridTemplateColumns: `repeat(auto-fit, minmax(228px, 1fr))`,
-      }}
-    >
-      <li sx={{ maxWidth: 288 }}>
+    <Styled.ul>
+      <Styled.li>
         <h3>
           <Styled.a href="https://joinoffstreet.com/">
             Offstreet Technology
@@ -24,9 +16,9 @@ const Experience = () => (
         </h3>
         Worked on a Automated visitor parking management System. The software
         helps Customers track, manage, and enforce your visitor parking.
-      </li>
+      </Styled.li>
 
-      <li sx={{ maxWidth: 288 }}>
+      <Styled.li>
         <h3>
           <Styled.a href="https://www.statcan.gc.ca/eng/start">
             Statistics Canada
@@ -35,9 +27,9 @@ const Experience = () => (
         Worked on an application based on key performance indicators that allow
         organizations to collect data and visualize key metrics about its
         business
-      </li>
+      </Styled.li>
 
-      <li sx={{ maxWidth: 288 }}>
+      <Styled.li>
         <h3>
           {" "}
           <Styled.a href="https://tricky-game.herokuapp.com/login">
@@ -49,9 +41,9 @@ const Experience = () => (
         <Styled.a href="https://firebase.google.com/">Firebase</Styled.a> as the
         real time database and{" "}
         <Styled.a href="https://socket.io/">WebSockets</Styled.a>
-      </li>
+      </Styled.li>
 
-      <li sx={{ maxWidth: 288 }}>
+      <Styled.li>
         <h3>
           {" "}
           <Styled.a href="http://www2.cs.uregina.ca/~rendon2m/v3/login.php">
@@ -61,8 +53,8 @@ const Experience = () => (
         </h3>
         The project is a twitter like an application where the user can post
         messages and pictures, and users can comment on those post.
-      </li>
-    </ul>
+      </Styled.li>
+    </Styled.ul>
   </Fragment>
 )
 
