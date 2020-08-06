@@ -27,7 +27,6 @@ const Repos = () => {
       <Styled.a href={url}>{name}</Styled.a>
     </Styled.li>
   ))
-  console.log("gatsbyRepoData", nodes)
 
   return (
     <div sx={{ py: 64 }}>
