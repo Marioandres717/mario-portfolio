@@ -24,7 +24,7 @@ const Repos = () => {
   const listOfRepos = nodes.map(({ name, url }) => (
     <Styled.li>
       {" "}
-      <Styled.a href={url}>{name}</Styled.a>
+      <Styled.a href={url}>{name.substring(0, 20)}</Styled.a>
     </Styled.li>
   ))
 

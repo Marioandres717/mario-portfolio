@@ -93,16 +93,18 @@ export default {
     a: {
       color: "text",
       textDecoration: "none",
+      fontSize: 14,
+      textTransform: "uppercase",
+      letterSpacing: "0.2em",
+      fontWeight: "bold",
+      cursor: "pointer",
     },
     ul: {
       listStyle: "none",
       p: 0,
       display: "grid",
       gridGap: 3,
-      gridTemplateColumns: `repeat(auto-fit, minmax(228px, 1fr))`,
-    },
-    li: {
-      maxWidth: 288,
+      gridTemplateColumns: `repeat(auto-fit, minmax(228px, 288px))`,
     },
   },
 }
