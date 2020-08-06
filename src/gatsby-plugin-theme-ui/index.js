@@ -98,13 +98,20 @@ export default {
       letterSpacing: "0.2em",
       fontWeight: "bold",
       cursor: "pointer",
+      "&:hover": {
+        color: "primary",
+      },
     },
     ul: {
       listStyle: "none",
       p: 0,
       display: "grid",
       gridGap: 3,
-      gridTemplateColumns: `repeat(auto-fit, minmax(228px, 288px))`,
+      gridTemplateColumns: `repeat(auto-fit, minmax(256px, 1fr))`,
+    },
+    li: {
+      fontSize: 18,
+      lineHeight: "1.625em",
     },
   },
 }

@@ -22,15 +22,17 @@ const Repos = () => {
   `)
   const { nodes } = gatsbyRepoData.github.user.repositories
   const listOfRepos = nodes.map(({ name, url }) => (
-    <Styled.li>
+    <li>
       {" "}
-      <Styled.a href={url}>{name.substring(0, 20)}</Styled.a>
-    </Styled.li>
+      <Styled.a href={url} sx={{ fontSize: 14 }}>
+        {name.substring(0, 20)}
+      </Styled.a>
+    </li>
   ))
 
   return (
     <div sx={{ py: 64 }}>
-      <Styled.ul>{listOfRepos}</Styled.ul>
+      <Styled.ul sx={{ gridGap: 32 }}>{listOfRepos}</Styled.ul>
     </div>
   )
 }

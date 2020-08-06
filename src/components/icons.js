@@ -6,6 +6,9 @@ import Twitter from "../assets/icons8-twitter.svg"
 const iconsStyle = {
   mx: 3,
   fill: theme => `${theme.colors.text}`,
+  "&:hover": {
+    fill: theme => `${theme.colors.primary}`,
+  },
 }
 const Icons = () => (
   <div sx={{ display: "flex", justifyContent: "center", py: 4 }}>
