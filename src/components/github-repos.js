@@ -22,7 +22,7 @@ const Repos = () => {
   `)
   const { nodes } = gatsbyRepoData.github.user.repositories
   const listOfRepos = nodes.map(({ name, url }) => (
-    <li>
+    <li key={url}>
       {" "}
       <Styled.a href={url} sx={{ fontSize: 14 }}>
         {name.substring(0, 20)}
