@@ -47,5 +47,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-theme-blog`,
+      options: {
+        basePath: `/blog`,
+      },
+    },
   ],
 }
