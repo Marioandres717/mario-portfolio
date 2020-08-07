@@ -3,30 +3,20 @@ module.exports = {
     title: `Mario Andres`,
     description: `Mario Andres Rendon Portfolio`,
     author: `Mario Andres Rendon`,
+    siteUrl: `https://marioandres.me`,
+    social: [
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/marioandres717`,
+      },
+      {
+        name: `GitHub`,
+        url: `https://github.com/marioandres717`,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
-      },
-    },
     `gatsby-plugin-theme-ui`,
     {
       resolve: "gatsby-plugin-react-svg",
@@ -51,6 +41,20 @@ module.exports = {
       resolve: `gatsby-theme-blog`,
       options: {
         basePath: `/blog`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
       },
     },
   ],
