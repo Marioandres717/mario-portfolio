@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => {
           </Link>
 
           <Link
-            to="/blog/"
+            to="/blog"
             sx={{
               color: "text",
               fontSize: 14,

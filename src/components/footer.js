@@ -27,10 +27,10 @@ const Footer = () => (
       <Link sx={LinkStyle} to="/">
         HOME
       </Link>
-      <Link sx={LinkStyle} to="/blog/">
+      <Link sx={LinkStyle} to="/blog">
         BLOG
       </Link>
-      <Link sx={LinkStyle} to="/about/">
+      <Link sx={LinkStyle} to="/about">
         ABOUT
       </Link>
       <div sx={{ mx: "auto" }} />
