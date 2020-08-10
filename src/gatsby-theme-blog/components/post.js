@@ -1,5 +1,5 @@
-import React from "react"
-
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../../components/layout"
@@ -21,19 +21,21 @@ const Post = ({ data: { post }, previous, next }) => (
       }
       imageAlt={post.imageAlt}
     />
-    <main>
-      <article>
-        <header>
-          <PostHero post={post} />
-          <PostTitle>{post.title}</PostTitle>
-          <PostDate>{post.date}</PostDate>
-        </header>
-        <section>
-          <MDXRenderer>{post.body}</MDXRenderer>
-        </section>
-      </article>
-    </main>
-    <PostFooter {...{ previous, next }} />
+    <div sx={{ maxWidth: 768, marginRight: "auto" }}>
+      <main>
+        <article>
+          <header>
+            <PostHero post={post} />
+            <PostTitle>{post.title}</PostTitle>
+            <PostDate>{post.date}</PostDate>
+          </header>
+          <section>
+            <MDXRenderer>{post.body}</MDXRenderer>
+          </section>
+        </article>
+      </main>
+      <PostFooter {...{ previous, next }} />
+    </div>
   </Layout>
 )
 
