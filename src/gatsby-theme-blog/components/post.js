@@ -26,8 +26,8 @@ const Post = ({ data: { post }, previous, next }) => (
         <article>
           <header>
             <PostHero post={post} />
-            <PostTitle>{post.title}</PostTitle>
-            <PostDate>{post.date}</PostDate>
+            <PostTitle sx={{ fontSize: 36 }}>{post.title}</PostTitle>
+            <PostDate sx={{ fontWeight: "bold" }}>{post.date}</PostDate>
           </header>
           <section>
             <MDXRenderer>{post.body}</MDXRenderer>
