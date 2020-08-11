@@ -1,5 +1,3 @@
-require("dotenv").config()
-
 exports.handler = (event, _context, callback) => {
   const mailgun = require("mailgun-js")
   const mg = mailgun({
@@ -8,10 +6,9 @@ exports.handler = (event, _context, callback) => {
   })
 
   const data = JSON.parse(event.body)
-
   const email = {
-    from: "mario rendon <marioarendon2@gmail.com>",
-    to: `${data.name} <${data.email}>`,
+    from: `${data.name} <${data.email}>`,
+    to: `Mario Andres <${process.env.EMAIL}>`,
     subject: data.subject,
     text: data.body,
   }

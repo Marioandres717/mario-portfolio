@@ -60,12 +60,14 @@ const Form = () => {
 
   if (state.status === "SUCCESS") {
     return (
-      <p>
-        Message sent!
-        <Button type="reset" onClick={() => dispatch({ type: "reset" })}>
-          Reset
-        </Button>
-      </p>
+      <Layout>
+        <p>
+          Message sent!
+          <Button type="reset" onClick={() => dispatch({ type: "reset" })}>
+            Reset
+          </Button>
+        </p>
+      </Layout>
     )
   }
 
