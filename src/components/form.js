@@ -1,5 +1,8 @@
-import React, { useReducer } from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+import { useReducer } from "react"
 import Layout from "./layout"
+import { Box, Input, Label, Button, Textarea, Styled } from "theme-ui"
 
 const INITIAL_STATE = {
   name: "",
@@ -59,9 +62,9 @@ const Form = () => {
     return (
       <p>
         Message sent!
-        <button type="reset" onClick={() => dispatch({ type: "reset" })}>
+        <Button type="reset" onClick={() => dispatch({ type: "reset" })}>
           Reset
-        </button>
+        </Button>
       </p>
     )
   }
@@ -71,44 +74,55 @@ const Form = () => {
       {state.status === "ERROR" && (
         <p>Something went wrong. Please try again.</p>
       )}
-      <form onSubmit={handleSubmit}>
-        <label>
+      <Styled.h2>I Would Love to heard from you!</Styled.h2>
+      <Box
+        as="form"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          maxWidth: 768,
+          mr: "auto",
+        }}
+        onSubmit={handleSubmit}
+      >
+        <Label>
           Name
-          <input
+          <Input
             type="text"
             name="name"
             value={state.name}
             onChange={updateFieldValue("name")}
           />
-        </label>
-        <label>
+        </Label>
+        <Label>
           Email value
-          <input
+          <Input
             type="email"
             name="email"
             value={state.email}
             onChange={updateFieldValue("email")}
           />
-        </label>
-        <label>
+        </Label>
+        <Label>
           Subject
-          <input
+          <Input
             type="text"
             name="subject"
             value={state.subject}
             onChange={updateFieldValue("subject")}
           />
-        </label>
-        <label>
+        </Label>
+        <Label>
           Body
-          <textarea
+          <Textarea
             name="body"
             value={state.body}
             onChange={updateFieldValue("body")}
           />
-        </label>
-        <button>Send</button>
-      </form>
+        </Label>
+        <Button mt={2}>Send</Button>
+      </Box>
     </Layout>
   )
 }

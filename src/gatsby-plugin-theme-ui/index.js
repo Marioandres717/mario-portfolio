@@ -114,4 +114,27 @@ export default {
       lineHeight: "1.625em",
     },
   },
+  forms: {
+    label: {
+      fontSize: 1,
+      fontWeight: "bold",
+      display: "block",
+    },
+    input: {
+      borderColor: "gray",
+      "&:focus": {
+        borderColor: "primary",
+        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        outline: "none",
+      },
+    },
+    textarea: {
+      borderColor: "gray",
+      "&:focus": {
+        borderColor: "primary",
+        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        outline: "none",
+      },
+    },
+  },
 }
