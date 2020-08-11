@@ -10,6 +10,9 @@ const LinkStyle = {
   fontWeight: 700,
   mr: 3,
   letterSpacing: "0.2em",
+  ":hover": {
+    color: theme => theme.colors.primary,
+  },
 }
 
 const Footer = () => (
@@ -32,6 +35,9 @@ const Footer = () => (
       </Link>
       <Link sx={LinkStyle} to="/about">
         ABOUT
+      </Link>
+      <Link sx={LinkStyle} to="/contact">
+        CONTACT
       </Link>
       <div sx={{ mx: "auto" }} />
       <div sx={{ my: 2, display: "inline-block", fontSize: 1 }}>
