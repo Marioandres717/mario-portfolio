@@ -1,11 +1,15 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
 import Layout from "../components/layout"
+import Image from "../components/image"
 
 const About = () => (
   <Layout>
     <div sx={{ maxWidth: 768 }}>
       <Styled.h1>ABOUT</Styled.h1>
+      <div sx={{ maxWidth: 500 }}>
+        <Image />
+      </div>
       <Styled.p>
         I’m a full-stack JavaScript Engineer who’s passionate about web
         development and the impact it has on the world. In my free time, I
