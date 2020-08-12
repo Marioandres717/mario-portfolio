@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import { Fragment } from "react"
 import { useReducer } from "react"
-import Layout from "./layout"
-import { Box, Input, Label, Button, Textarea, Styled } from "theme-ui"
+import { Box, Input, Label, Button, Textarea } from "theme-ui"
 
 const INITIAL_STATE = {
   name: "",
@@ -60,23 +60,20 @@ const Form = () => {
 
   if (state.status === "SUCCESS") {
     return (
-      <Layout>
-        <p>
-          Message sent!
-          <Button type="reset" onClick={() => dispatch({ type: "reset" })}>
-            Reset
-          </Button>
-        </p>
-      </Layout>
+      <p>
+        Message sent!
+        <Button type="reset" onClick={() => dispatch({ type: "reset" })}>
+          Reset
+        </Button>
+      </p>
     )
   }
 
   return (
-    <Layout>
+    <Fragment>
       {state.status === "ERROR" && (
         <p>Something went wrong. Please try again.</p>
       )}
-      <Styled.h2>I Would Love to heard from you!</Styled.h2>
       <Box
         as="form"
         sx={{
@@ -125,7 +122,7 @@ const Form = () => {
         </Label>
         <Button mt={2}>Send</Button>
       </Box>
-    </Layout>
+    </Fragment>
   )
 }
 
