@@ -43,7 +43,7 @@ const Experience = () => (
         <Styled.a href="http://www2.cs.uregina.ca/~rendon2m/v3/login.php">
           <Styled.h3> Twitter Clone</Styled.h3>
         </Styled.a>
-        I created a twitter-like an application where the user can post messages
+        I created a twitter-like application where the user can post messages
         and pictures, and other users can comment on those posts.
       </Styled.li>
     </Styled.ul>
