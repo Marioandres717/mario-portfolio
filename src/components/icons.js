@@ -10,6 +10,7 @@ const iconsStyle = {
     fill: theme => `${theme.colors.primary}`,
   },
 }
+// TODO: read socials from gatsby-config
 const Icons = () => (
   <div sx={{ display: "flex", justifyContent: "center", py: 4 }}>
     <a href="https://twitter.com/marioandres717">
