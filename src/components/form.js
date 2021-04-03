@@ -49,11 +49,9 @@ const Form = () => {
     })
       .then(response => response.json())
       .then(response => {
-        console.log(response)
         setStatus("SUCCESS")
       })
       .catch(error => {
-        console.error(error)
         setStatus("ERROR")
       })
   }
