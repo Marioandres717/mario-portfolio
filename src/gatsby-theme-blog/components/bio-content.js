@@ -1,6 +1,5 @@
-import Bio from "gatsby-theme-blog/src/components/bio"
 import React, { Fragment } from "react"
-import { Styled } from "theme-ui"
+import Bio from "gatsby-theme-blog/src/components/bio"
 
 const BioContent = () => (
   <Fragment>

@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import Github from "../assets/icons8-github.svg"
 import Twitter from "../assets/icons8-twitter.svg"
 

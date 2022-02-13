@@ -17,7 +17,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-theme-ui`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -41,6 +40,8 @@ module.exports = {
       resolve: `gatsby-theme-blog`,
       options: {
         basePath: `/blog`,
+        preset: false,
+        prismPreset: null,
       },
     },
     `gatsby-plugin-sharp`,

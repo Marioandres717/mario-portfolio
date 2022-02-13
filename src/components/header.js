@@ -1,9 +1,6 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import { useColorMode, Flex, Box } from "theme-ui"
-import { IconButton } from "theme-ui"
 
 const Header = ({ siteTitle }) => {
   const [colorMode, setColorMode] = useColorMode()

@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, Styled } from "theme-ui"
+import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 const Repos = () => {

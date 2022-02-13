@@ -1,8 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Fragment } from "react"
-import { useReducer } from "react"
-import { Box, Input, Label, Button, Textarea } from "theme-ui"
+import React, { Fragment, useReducer } from "react"
 
 const INITIAL_STATE = {
   name: "",
