@@ -30,9 +30,6 @@ const Footer = () => (
       <Link sx={LinkStyle} to="/">
         HOME
       </Link>
-      <Link sx={LinkStyle} to="/blog">
-        BLOG
-      </Link>
       <Link sx={LinkStyle} to="/about">
         ABOUT
       </Link>

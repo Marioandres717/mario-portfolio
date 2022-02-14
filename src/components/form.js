@@ -56,9 +56,9 @@ const Form = () => {
     return (
       <p>
         Message sent!
-        <Button type="reset" onClick={() => dispatch({ type: "reset" })}>
+        <button type="reset" onClick={() => dispatch({ type: "reset" })}>
           Reset
-        </Button>
+        </button>
       </p>
     )
   }
@@ -68,7 +68,7 @@ const Form = () => {
       {state.status === "ERROR" && (
         <p>Something went wrong. Please try again.</p>
       )}
-      <Box
+      <div
         as="form"
         sx={{
           display: "flex",
@@ -79,43 +79,43 @@ const Form = () => {
         }}
         onSubmit={handleSubmit}
       >
-        <Label>
+        <label>
           Name
-          <Input
+          <input
             type="text"
             name="name"
             value={state.name}
             onChange={updateFieldValue("name")}
           />
-        </Label>
-        <Label>
+        </label>
+        <label>
           Email value
-          <Input
+          <input
             type="email"
             name="email"
             value={state.email}
             onChange={updateFieldValue("email")}
           />
-        </Label>
-        <Label>
+        </label>
+        <label>
           Subject
-          <Input
+          <input
             type="text"
             name="subject"
             value={state.subject}
             onChange={updateFieldValue("subject")}
           />
-        </Label>
-        <Label>
+        </label>
+        <label>
           Body
-          <Textarea
+          <textarea
             name="body"
             value={state.body}
             onChange={updateFieldValue("body")}
           />
-        </Label>
-        <Button mt={2}>Send</Button>
-      </Box>
+        </label>
+        <button mt={2}>Send</button>
+      </div>
     </Fragment>
   )
 }

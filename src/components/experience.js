@@ -6,46 +6,45 @@ const Experience = () => (
   <Fragment>
     {" "}
     <h2 sx={{ my: 22, fontSize: 27 }}>Experience</h2>{" "}
-    <Styled.ul>
-      <Styled.li>
-        <Styled.a href="https://joinoffstreet.com/">
-          <Styled.h3>Offstreet Technology</Styled.h3>
-        </Styled.a>
+    <ul>
+      <li>
+        <a href="https://joinoffstreet.com/">
+          <h3>Offstreet Technology</h3>
+        </a>
         I worked on an automated visitor parking management System. The software
         helps property managers track, manage, and enforce visitor parking.
-      </Styled.li>
+      </li>
 
-      <Styled.li>
-        <Styled.a href="https://www.statcan.gc.ca/eng/start">
-          <Styled.h3>Statistics Canada</Styled.h3>
-        </Styled.a>
+      <li>
+        <a href="https://www.statcan.gc.ca/eng/start">
+          <h3>Statistics Canada</h3>
+        </a>
         I worked on an application based on key performance indicators that
         allow organizations to collect data and visualize critical metrics about
         its business
-      </Styled.li>
+      </li>
 
-      <Styled.li>
+      <li>
         {" "}
-        <Styled.a href="https://tricky-game.herokuapp.com/login">
+        <a href="https://tricky-game.herokuapp.com/login">
           {" "}
-          <Styled.h3>Tic Tac Toe Game</Styled.h3>
-        </Styled.a>
+          <h3>Tic Tac Toe Game</h3>
+        </a>
         I created an online tic-tac-toe game that leverages{" "}
-        <Styled.a href="https://firebase.google.com/">Firebase</Styled.a> as the
-        real-time database and{" "}
-        <Styled.a href="https://socket.io/">WebSockets</Styled.a> for
-        multiplayer functionality
-      </Styled.li>
+        <a href="https://firebase.google.com/">Firebase</a> as the real-time
+        database and <a href="https://socket.io/">WebSockets</a> for multiplayer
+        functionality
+      </li>
 
-      <Styled.li>
+      <li>
         {" "}
-        <Styled.a href="http://www2.cs.uregina.ca/~rendon2m/v3/login.php">
-          <Styled.h3> Twitter Clone</Styled.h3>
-        </Styled.a>
+        <a href="http://www2.cs.uregina.ca/~rendon2m/v3/login.php">
+          <h3> Twitter Clone</h3>
+        </a>
         I created a twitter-like application where the user can post messages
         and pictures, and other users can comment on those posts.
-      </Styled.li>
-    </Styled.ul>
+      </li>
+    </ul>
   </Fragment>
 )
 

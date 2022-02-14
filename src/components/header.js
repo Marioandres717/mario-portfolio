@@ -1,19 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 const Header = ({ siteTitle }) => {
-  const [colorMode, setColorMode] = useColorMode()
+  const [colorMode, setColorMode] = useState()
   return (
     <header>
-      <Flex
+      <div
         style={{
           margin: `0 auto`,
           maxWidth: 1280,
           padding: `1.45rem 1.0875rem`,
         }}
       >
-        <Box p={2} sx={{ flex: "1 1 auto" }}>
+        <div p={2} sx={{ flex: "1 1 auto" }}>
           <Link
             to="/"
             sx={{
@@ -28,24 +28,10 @@ const Header = ({ siteTitle }) => {
           >
             Home
           </Link>
+        </div>
 
-          <Link
-            to="/blog"
-            sx={{
-              color: "text",
-              fontSize: 14,
-              letterSpacing: 4,
-              fontWeight: "bold",
-              textDecoration: `none`,
-              textTransform: "uppercase",
-            }}
-          >
-            Blog
-          </Link>
-        </Box>
-
-        <Box p={2}>
-          <IconButton
+        <div p={2}>
+          <button
             aria-label="Toggle Theme Mode"
             onClick={e => {
               setColorMode(colorMode === "default" ? "dark" : "default")
@@ -67,9 +53,9 @@ const Header = ({ siteTitle }) => {
                 strokeWidth={2}
               />
             </svg>
-          </IconButton>
-        </Box>
-      </Flex>
+          </button>
+        </div>
+      </div>
     </header>
   )
 }

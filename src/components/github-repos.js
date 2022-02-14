@@ -23,15 +23,15 @@ const Repos = () => {
   const listOfRepos = nodes.map(({ name, url }) => (
     <li key={url}>
       {" "}
-      <Styled.a href={url} sx={{ fontSize: 14 }}>
+      <a href={url} sx={{ fontSize: 14 }}>
         {name.substring(0, 20)}
-      </Styled.a>
+      </a>
     </li>
   ))
 
   return (
     <div sx={{ py: 64 }}>
-      <Styled.ul sx={{ gridGap: 32 }}>{listOfRepos}</Styled.ul>
+      <ul sx={{ gridGap: 32 }}>{listOfRepos}</ul>
     </div>
   )
 }

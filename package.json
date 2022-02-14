@@ -16,7 +16,6 @@
     "gatsby-remark-images": "^6.7.0",
     "gatsby-source-filesystem": "^4.7.0",
     "gatsby-source-graphql": "^4.7.0",
-    "gatsby-theme-blog": "^4.0.0",
     "gatsby-transformer-remark": "^5.7.0",
     "gatsby-transformer-sharp": "^4.7.0",
     "mailgun-js": "^0.22.0",
@@ -40,8 +39,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "volta": {
-    "node": "16.14.0"
   }
 }

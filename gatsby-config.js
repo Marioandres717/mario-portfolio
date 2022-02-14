@@ -36,14 +36,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-theme-blog`,
-      options: {
-        basePath: `/blog`,
-        preset: false,
-        prismPreset: null,
-      },
-    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
