@@ -5,7 +5,7 @@ import { Fragment } from "react"
 const Experience = () => (
   <Fragment>
     {" "}
-    <h2 sx={{ my: 22, fontSize: 27 }}>Experience</h2>{" "}
+    <h2>Experience</h2>{" "}
     <ul>
       <li>
         <a href="https://joinoffstreet.com/">

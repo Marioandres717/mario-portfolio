@@ -5,12 +5,12 @@ import Image from "../components/image"
 
 const About = () => (
   <Layout>
-    <div sx={{ maxWidth: 768 }}>
-      <h1 sx={{ fontSize: 36 }}>About</h1>
-      <div sx={{ maxWidth: 500 }}>
+    <div>
+      <h1>About</h1>
+      <div>
         <Image />
       </div>
-      <p sx={{ fontSize: 18 }}>
+      <p>
         I’m a full-stack JavaScript Engineer who’s passionate about web
         development and its impact on the world. In my free time, I always
         upgrade my knowledge by searching for the latest trends on Javascript. I

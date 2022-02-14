@@ -68,17 +68,7 @@ const Form = () => {
       {state.status === "ERROR" && (
         <p>Something went wrong. Please try again.</p>
       )}
-      <div
-        as="form"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          maxWidth: 768,
-          mr: "auto",
-        }}
-        onSubmit={handleSubmit}
-      >
+      <div as="form" onSubmit={handleSubmit}>
         <label>
           Name
           <input
@@ -114,7 +104,7 @@ const Form = () => {
             onChange={updateFieldValue("body")}
           />
         </label>
-        <button mt={2}>Send</button>
+        <button>Send</button>
       </div>
     </Fragment>
   )

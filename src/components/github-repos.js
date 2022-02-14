@@ -23,15 +23,13 @@ const Repos = () => {
   const listOfRepos = nodes.map(({ name, url }) => (
     <li key={url}>
       {" "}
-      <a href={url} sx={{ fontSize: 14 }}>
-        {name.substring(0, 20)}
-      </a>
+      <a href={url}>{name.substring(0, 20)}</a>
     </li>
   ))
 
   return (
-    <div sx={{ py: 64 }}>
-      <ul sx={{ gridGap: 32 }}>{listOfRepos}</ul>
+    <div>
+      <ul>{listOfRepos}</ul>
     </div>
   )
 }

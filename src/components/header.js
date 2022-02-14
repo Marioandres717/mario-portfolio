@@ -6,31 +6,12 @@ const Header = ({ siteTitle }) => {
   const [colorMode, setColorMode] = useState()
   return (
     <header>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1280,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <div p={2} sx={{ flex: "1 1 auto" }}>
-          <Link
-            to="/"
-            sx={{
-              color: "text",
-              fontSize: 14,
-              letterSpacing: 4,
-              fontWeight: "bold",
-              mr: 16,
-              textDecoration: `none`,
-              textTransform: "uppercase",
-            }}
-          >
-            Home
-          </Link>
+      <div>
+        <div>
+          <Link to="/">Home</Link>
         </div>
 
-        <div p={2}>
+        <div>
           <button
             aria-label="Toggle Theme Mode"
             onClick={e => {

@@ -2,24 +2,17 @@ import React from "react"
 import Github from "../assets/icons8-github.svg"
 import Twitter from "../assets/icons8-twitter.svg"
 
-const iconsStyle = {
-  mx: 3,
-  fill: theme => `${theme.colors.text}`,
-  "&:hover": {
-    fill: theme => `${theme.colors.primary}`,
-  },
-}
 // TODO: read socials from gatsby-config
 const Icons = () => (
-  <div sx={{ display: "flex", justifyContent: "center", py: 4 }}>
+  <div>
     <a href="https://twitter.com/marioandres717">
       {" "}
-      <Twitter sx={iconsStyle} />
+      <Twitter />
     </a>
 
     <a href="https://github.com/marioandres717">
       {" "}
-      <Github sx={iconsStyle} />
+      <Github />
     </a>
   </div>
 )
