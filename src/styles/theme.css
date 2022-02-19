@@ -1,0 +1,92 @@
+:root {
+  /* Typography */
+
+  /* Size */
+  --type-font-size-base: 16px;
+  --type-font-size-900: 40px;
+  --type-font-size-800: 34px;
+  --type-font-size-700: 28px;
+  --type-font-size-600: 24px;
+  --type-font-size-500: 20px;
+  --type-font-size-400: 18px;
+  --type-font-size-300: 16px;
+  --type-font-size-200: 14px;
+  --type-font-size-100: 12px;
+
+  /* Weight */
+  --type-font-weight-default: 400;
+  --type-font-weight-strong: 600;
+  --type-font-weight-900: 900;
+  --type-font-weight-800: 800;
+  --type-font-weight-700: 700;
+  --type-font-weight-600: 600;
+  --type-font-weight-500: 500;
+  --type-font-weight-400: 400;
+  --type-font-weight-300: 300;
+  --type-font-weight-200: 200;
+  --type-font-weight-100: 100;
+
+  /* Line height */
+  --type-line-height-standard: 25px;
+  --type-line-height-huge: 40px;
+  --type-line-height-extra: 32px;
+  --type-line-height-tight: 20px;
+
+  /* Letter Spacing */
+  --type-letter-spacing-none: 0;
+  --type-letter-spacing-all-caps: 0.08em;
+  --type-letter-spacing-looser: 0.025em;
+  --type-letter-spacing-loose: 0.01em;
+  --type-letter-spacing-tight: -0.01em;
+  --type-letter-spacing-tighter: -0.025px;
+
+  /* Color */
+  --primary-color: hsl(240, 100%, 57%);
+  --secondary-color: hsl(260, 100%, 57%);
+  --font-color: #000;
+  --bg-color: #fff;
+
+  /* Spacing */
+  --layout-spacing-xx-small: 4px;
+  --layout-spacing-x-small: 8px;
+  --layout-spacing-small: 12px;
+  --layout-spacing-medium: 16px;
+  --layout-spacing-large: 24px;
+  --layout-spacing-x-large: 48px;
+  --layout-spacing-xx-large: 64px;
+}
+
+[data-theme="dark"] {
+  --primary-color: #0ff;
+  --secondary-color: #0fc;
+  --font-color: #fff;
+  --bg-color: #000;
+}
+
+[data-theme="gray"] {
+  --primary-color: hsl(180, 100%, 57%);
+  --secondary-color: hsl(50, 100%, 57%);
+  --font-color: #fff;
+  --bg-color: hsl(180, 5%, 15%);
+}
+
+[data-theme="purple"] {
+  --primary-color: hsl(260, 100%, 80%);
+  --secondary-color: hsl(290, 100%, 80%);
+  --font-color: #fff;
+  --bg-color: hsl(230, 25%, 18%);
+}
+
+[data-theme="green"] {
+  --primary-color: hsl(120, 100%, 40%);
+  --secondary-color: hsl(120, 50%, 40%);
+  --font-color: hsl(120, 100%, 75%);
+  --bg-color: hsl(120, 20%, 10%);
+}
+
+[data-theme="pink"] {
+  --primary-color: hsl(350, 100%, 50%);
+  --secondary-color: hsl(280, 100%, 50%);
+  --font-color: hsl(350, 80%, 10%);
+  --bg-color: hsl(350, 100%, 90%);
+}
