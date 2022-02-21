@@ -7,6 +7,8 @@ header {
   max-width: 1280px;
   margin: auto;
   padding: 32px var(--layout-spacing-medium);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 header a {
