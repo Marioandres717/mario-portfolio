@@ -1,0 +1,16 @@
+.socials {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socials a {
+  margin-left: var(--layout-spacing-x-small);
+  margin-right: var(--layout-spacing-medium);
+}
+
+.socials svg {
+  width: 28px;
+  height: 28px;
+}

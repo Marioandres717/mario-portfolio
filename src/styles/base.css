@@ -5,14 +5,34 @@
 }
 
 body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
   line-height: var(--type-line-height-standard);
   letter-spacing: var(--type-letter-spacing-none);
+  transition-duration: 0.4s;
 }
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: var(--type-letter-spacing-all-caps);
+  font-weight: var(--type-font-weight-700);
+  color: inherit;
 }
 
 ul {
   list-style-type: none;
+}
+
+a:hover,
+button:hover {
+  color: var(--primary-color);
+}
+
+svg {
+  fill: var(--font-color);
+}
+
+svg:hover {
+  fill: var(--primary-color);
 }
