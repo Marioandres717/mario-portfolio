@@ -1,0 +1,36 @@
+.container {
+  font-weight: var(--type-font-weight-700);
+  line-height: 1.65;
+  padding-bottom: 32px;
+}
+
+.container > h1 {
+  margin: var(--layout-spacing-large) 0;
+}
+
+.container > p {
+  font-size: var(--type-font-size-400);
+  margin: var(--layout-spacing-medium) 0;
+}
+
+.container > p > a {
+  text-transform: none;
+  letter-spacing: inherit;
+}
+
+.container > ul > * {
+  margin-right: var(--layout-spacing-medium);
+  text-transform: none;
+}
+
+@media screen and (min-width: 40em) {
+  .container {
+    padding-bottom: var(--layout-spacing-xx-large);
+  }
+}
+
+@media screen and (min-width: 52em) {
+  .container {
+    padding-bottom: 128px;
+  }
+}

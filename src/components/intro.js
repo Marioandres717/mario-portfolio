@@ -1,10 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import * as introStyles from "../styles/intro.module.css"
+
 const Intro = () => (
-  <div>
-    <h1>Mario Andres Rendon</h1>
-    <p>Fullstack Javascript Developer. Based in Regina, SK</p>
+  <div className={introStyles.container}>
+    <h1>
+      CupCakezGod <br /> Mario Andres Rendon
+    </h1>
+    <p>
+      Front-end developer at <a href="https://www.anomali.com/">Anomali. </a>
+      Based in Regina, SK
+    </p>
     <ul>
       <Link to="/blog/">Blog</Link>
 
