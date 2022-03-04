@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
+import * as reposStyles from "../styles/github-repos.module.css"
+
 const Repos = () => {
   const gatsbyRepoData = useStaticQuery(graphql`
     query {
@@ -22,13 +24,12 @@ const Repos = () => {
   const { nodes } = gatsbyRepoData.github.user.repositories
   const listOfRepos = nodes.map(({ name, url }) => (
     <li key={url}>
-      {" "}
       <a href={url}>{name.substring(0, 20)}</a>
     </li>
   ))
 
   return (
-    <div>
+    <div className={reposStyles.container}>
       <ul>{listOfRepos}</ul>
     </div>
   )

@@ -1,0 +1,15 @@
+.unorderList {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  gap: var(--layout-spacing-large);
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+}
+
+.headers {
+  margin: var(--layout-spacing-large) 0;
+}
+
+.unorderList > li {
+  font-size: var(--type-font-size-400);
+}

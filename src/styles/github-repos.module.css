@@ -1,0 +1,11 @@
+.container {
+  padding: var(--layout-spacing-xx-large) 0;
+}
+
+.container > ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  gap: var(--layout-spacing-large);
+}
