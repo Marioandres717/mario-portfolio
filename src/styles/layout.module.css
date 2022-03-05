@@ -5,6 +5,9 @@
 }
 
 main {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;

@@ -8,8 +8,10 @@ const Experience = () => (
       <a href="https://www.anomali.com/">
         <h3 className={experienceStyles.headers}>Anomali</h3>
       </a>
-      I worked on the frontend of the website. I was responsible for multiple
-      features, such as the search bar, the alerts, and links
+      Anomali delivers intelligence-driven cybersecurity solutions, including
+      ThreatStream®, Match™, and Lens™. Companies use Anomali to enhance threat
+      visibility, automate threat processing and detection, and accelerate
+      threat investigation, response, and remediation.
     </li>
     <li>
       <a href="https://www.anomali.com/">
@@ -20,10 +22,11 @@ const Experience = () => (
     </li>
     <li>
       <a href="https://joinoffstreet.com/">
-        <h3 className={experienceStyles.headers}>Offstreet Technology</h3>
+        <h3 className={experienceStyles.headers}>Offstreet</h3>
       </a>
-      I worked on an automated visitor parking management System. The software
-      helps property managers track, manage, and enforce visitor parking.
+      Offstreet's license plate-based parking validation software helps
+      organizations self-manage their complimentary employee, customer, and
+      guest parking.
     </li>
 
     <li>

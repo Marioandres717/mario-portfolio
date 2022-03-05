@@ -1,0 +1,5 @@
+.aboutMe {
+  font-size: var(--type-font-size-800);
+  line-height: 2;
+  padding: 0 var(--layout-spacing-x-large);
+}

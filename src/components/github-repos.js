@@ -10,11 +10,32 @@ const Repos = () => {
         user(login: "marioandres717") {
           repositories(
             orderBy: { field: UPDATED_AT, direction: DESC }
-            first: 16
+            first: 35
           ) {
             nodes {
               name
               url
+              description
+              homepageUrl
+              collaborators {
+                edges {
+                  node {
+                    id
+                    name
+                    avatarUrl
+                  }
+                }
+              }
+              repositoryTopics(first: 8) {
+                edges {
+                  node {
+                    topic {
+                      id
+                      name
+                    }
+                  }
+                }
+              }
             }
           }
         }

@@ -1,0 +1,6 @@
+.twoColumnLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--layout-spacing-large);
+  margin: var(--layout-spacing-large) 0;
+}

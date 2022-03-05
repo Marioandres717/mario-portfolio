@@ -1,5 +1,7 @@
 import React, { Fragment, useReducer } from "react"
 
+import * as formStyles from "../styles/form.module.css"
+
 const INITIAL_STATE = {
   name: "",
   email: "",
@@ -68,44 +70,37 @@ const Form = () => {
       {state.status === "ERROR" && (
         <p>Something went wrong. Please try again.</p>
       )}
-      <div as="form" onSubmit={handleSubmit}>
-        <label>
-          Name
-          <input
-            type="text"
-            name="name"
-            value={state.name}
-            onChange={updateFieldValue("name")}
-          />
-        </label>
-        <label>
-          Email value
-          <input
-            type="email"
-            name="email"
-            value={state.email}
-            onChange={updateFieldValue("email")}
-          />
-        </label>
-        <label>
-          Subject
-          <input
-            type="text"
-            name="subject"
-            value={state.subject}
-            onChange={updateFieldValue("subject")}
-          />
-        </label>
-        <label>
-          Body
-          <textarea
-            name="body"
-            value={state.body}
-            onChange={updateFieldValue("body")}
-          />
-        </label>
+      <form className={formStyles.form} onSubmit={handleSubmit}>
+        <label>Name</label>
+        <input
+          type="text"
+          name="name"
+          value={state.name}
+          onChange={updateFieldValue("name")}
+        />
+
+        <label>Email value</label>
+        <input
+          type="email"
+          name="email"
+          value={state.email}
+          onChange={updateFieldValue("email")}
+        />
+        <label>Subject</label>
+        <input
+          type="text"
+          name="subject"
+          value={state.subject}
+          onChange={updateFieldValue("subject")}
+        />
+        <label>Body</label>
+        <textarea
+          name="body"
+          value={state.body}
+          onChange={updateFieldValue("body")}
+        />
         <button>Send</button>
-      </div>
+      </form>
     </Fragment>
   )
 }
