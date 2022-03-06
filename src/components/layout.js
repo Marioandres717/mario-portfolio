@@ -6,6 +6,7 @@ import Header from "./header"
 import Footer from "./footer"
 
 import * as layoutStyles from "../styles/layout.module.css"
+import { ThemeProvider } from "../state/theme.context"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,9 +21,11 @@ const Layout = ({ children }) => {
 
   return (
     <div className={layoutStyles.container}>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
-      <Footer />
+      <ThemeProvider>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main>{children}</main>
+        <Footer />
+      </ThemeProvider>
     </div>
   )
 }

@@ -1,13 +1,12 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-import { useTheme } from "../state/theme.hook"
+import { ThemeContext } from "../state/theme.context"
 import "../styles/header.module.css"
 
 const Header = () => {
-  const [theme, setTheme] = useTheme()
-
+  const { theme, toggleTheme } = useContext(ThemeContext)
   return (
     <header>
       <div>
@@ -18,7 +17,7 @@ const Header = () => {
       <button
         title="Cycle Color Mode"
         aria-label="Toggle Theme Mode"
-        onClick={() => setTheme(theme)}
+        onClick={() => toggleTheme(theme)}
       >
         <svg viewBox="0 0 32 32" width="24" height="24" fill="currentcolor">
           <circle
