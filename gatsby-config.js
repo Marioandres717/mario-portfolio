@@ -13,6 +13,10 @@ module.exports = {
         name: `GitHub`,
         url: `https://github.com/marioandres717`,
       },
+      {
+        name: `LinkedIn`,
+        url: `https://www.linkedin.com/in/mario-rendon/`,
+      },
     ],
   },
   plugins: [
