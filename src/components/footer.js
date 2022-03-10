@@ -11,7 +11,6 @@ const Footer = () => (
     <div>
       <Link to="/">HOME</Link>
       <Link to="/about">ABOUT</Link>
-      <Link to="/contact">CONTACT</Link>
       <div></div>
       <div>© {new Date().getFullYear()} Mario Andres </div>{" "}
     </div>

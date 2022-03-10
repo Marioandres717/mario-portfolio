@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Intro from "../components/intro"
-import Experience from "../components/experience"
 import Repos from "../components/github-repos"
 
 const IndexPage = () => (
@@ -10,7 +9,6 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Intro />
     <h2>Projects</h2>
-    {/* <Experience /> */}
     <Repos />
   </Layout>
 )

@@ -1,0 +1,24 @@
+.cvContainer {
+  margin: var(--layout-spacing-large) 0;
+}
+
+.cvContainer > div {
+  display: flex;
+  justify-content: center;
+}
+
+.cvContainer > div > a {
+  margin-left: -70px;
+  z-index: 1;
+  height: min-content;
+}
+
+.cvContainer > div > a > svg {
+  width: 80px;
+  height: 80px;
+  fill: #000;
+}
+
+.cvContainer > div > a > svg:hover {
+  fill: var(--primary-color);
+}
