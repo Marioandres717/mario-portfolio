@@ -8,7 +8,7 @@
 }
 
 .cvContainer > div > a {
-  margin-left: -70px;
+  margin-left: -80px;
   z-index: 1;
   height: min-content;
 }
@@ -21,4 +21,23 @@
 
 .cvContainer > div > a > svg:hover {
   fill: var(--primary-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .cvContainer > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cvContainer > div > a {
+    margin: 20px 0;
+    width: fit-content;
+    height: min-content;
+  }
+
+  .cvContainer > div > a > svg {
+    width: 80px;
+    height: 80px;
+    fill: var(--font-color);
+  }
 }
