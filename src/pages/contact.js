@@ -5,13 +5,15 @@ import TwoColumnLayout from "../components/two-column-layout"
 import Animation from "../components/animation"
 import SEO from "../components/seo"
 
+import * as contactStyles from "../styles/contact.module.css"
+
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <TwoColumnLayout>
+    <div className={contactStyles.container}>
       <Animation />
       <Form />
-    </TwoColumnLayout>
+    </div>
   </Layout>
 )
 

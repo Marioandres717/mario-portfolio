@@ -34,11 +34,15 @@ const Repos = () => {
     }
   `)
   const { nodes } = gatsbyRepoData.github.user.repositories
-  const listOfRepos = nodes.map(({ name, url }) => (
-    <li key={url}>
-      <a href={url}>{name.substring(0, 20)}</a>
-    </li>
-  ))
+  const listOfRepos = [...nodes]
+    .sort((a, b) => (a.description ? 1 : b.description ? -1 : 0))
+    .reverse()
+    .map(({ name, url, description }) => (
+      <li key={url}>
+        <a href={url}>{name.substring(0, 20)}</a>
+        <p>{description}</p>
+      </li>
+    ))
 
   return (
     <div className={reposStyles.container}>

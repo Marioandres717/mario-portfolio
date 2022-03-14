@@ -13,6 +13,7 @@ const Intro = () => (
       <a href="https://twitter.com/marioandres717">Twitter</a>
       <a href="https://github.com/Marioandres717">GitHub</a>
       <a href="https://www.linkedin.com/in/mario-rendon/">LinkedIn</a>
+      <a href="https://codepen.io/malthael717">CodePen</a>
     </ul>
   </div>
 )
