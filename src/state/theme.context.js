@@ -16,6 +16,7 @@ export const ThemeContext = React.createContext({
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setThemeColor] = useState(() => {
+    if (typeof window === "undefined") return
     const theme = localStorage.getItem("theme-color")
     document.body.setAttribute("data-theme", theme)
 
